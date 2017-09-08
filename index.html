@@ -1,11 +1,53 @@
 <html>
     <head>
+        <title>Sunisa Szc</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script src='build/main.bundle.js'></script>
+        <style>
+            .center {
+                display: block;
+                margin: auto;
+                height: 40%;
+                padding: 15px;
+                text-align: center;
+            }
+        </style>
     </head>
     <body>
-        <div id="demo" style="color:red"></div>
-        <ul><li>
-            <span></span>
-        </li></ul>
+        <div class="w3-container">
+                <div class="row">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                         <div class="w3-panel w3-card">
+                             <br/>
+                              <center><h1>Beer Searching</h1></center>
+                             <br/>
+                             <div class="form-horizontal">
+                             <div class="form-group">
+                                    <label class="control-label col-sm-2" for="name">Beer Name</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="name" placeholder="Enter Beer Name" name="name">
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                    <label class="control-label col-sm-2" for="food">Food Pairing</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="food" placeholder="Enter Food" name="food">
+                                    </div>
+                            </div>
+                            <div class="form-group">
+                                    <center><input type="button" class="btn btn-info" onclick="search()" value="Search"/></center>
+                            </div>
+                             </div>
+                             <div id="beers"></div>
+                             <br/>
+                         </div>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+        </div>
     </body>
 </html>
